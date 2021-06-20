@@ -136,7 +136,8 @@ function drawEverything(){
 
 	if(showingWinScreen){
 		canvasContext.fillStyle = 'white';
-
+                canvasContext.font = '45px sans-serif';
+		
 		if(player1Score >= WINNING_SCORE){
 			canvasContext.fillText('Woohoo, You Won!!!',350,200);
 		}
@@ -154,6 +155,7 @@ function drawEverything(){
 	colorRect(canvas.width-PADDLE_THICKNESS, paddle2Y, PADDLE_THICKNESS, PADDLE_HEIGHT, 'white');
 	colorCircle(ballX, ballY, 10, 'red');
 
+	canvasContext.font = '45px sans-serif';     
 	canvasContext.fillText(player1Score, 100, 100);
 	canvasContext.fillText(player2Score, canvas.width-100, 100);
 }
