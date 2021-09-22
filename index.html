@@ -28,7 +28,7 @@
 
 	var player1Score = 0;
 	var player2Score = 0;
-	const WINNING_SCORE = 3;
+	const WINNING_SCORE = 10;
 
 	var showingWinScreen = false;
 
@@ -74,10 +74,10 @@ function calcMousePos(evt){
 function computerMovement(){
 	var paddle2YCenter = paddle2Y + (PADDLE_HEIGHT/2);
 	if(paddle2YCenter < ballY-35){
-		paddle2Y = paddle2Y + 6;
+		paddle2Y = paddle2Y + 10;
 	}
 	else if(paddle2YCenter > ballY+35){
-		paddle2Y = paddle2Y - 6;
+		paddle2Y = paddle2Y - 10;
 	}
 }
 	
